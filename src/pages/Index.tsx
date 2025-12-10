@@ -1,13 +1,43 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/landing/Header";
+import Hero from "@/components/landing/Hero";
+import Credibility from "@/components/landing/Credibility";
+import TargetAudience from "@/components/landing/TargetAudience";
+import Differentials from "@/components/landing/Differentials";
+import HardwareSolutions from "@/components/landing/HardwareSolutions";
+import Integration from "@/components/landing/Integration";
+import Benefits from "@/components/landing/Benefits";
+import ContactForm from "@/components/landing/ContactForm";
+import Footer from "@/components/landing/Footer";
+import { Helmet } from "react-helmet-async";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <>
+      <Helmet>
+        <title>Horus Smart Detections | Hardware Profissional para Drones Enterprise e DJI Dock</title>
+        <meta 
+          name="description" 
+          content="Especialistas em drones enterprise, DJI Dock e projetos de hardware sob medida para operações críticas. Consultoria técnica e suporte especializado desde 2014." 
+        />
+        <meta name="keywords" content="drones enterprise, DJI Dock, drones profissionais, hardware drone, inspeção aérea, automação drone" />
+        <link rel="canonical" href="https://horus.com.br" />
+      </Helmet>
+      
+      <div className="min-h-screen bg-background">
+        <Header />
+        <main>
+          <Hero />
+          <Credibility />
+          <TargetAudience />
+          <Differentials />
+          <HardwareSolutions />
+          <Integration />
+          <Benefits />
+          <ContactForm />
+        </main>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 
