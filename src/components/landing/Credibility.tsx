@@ -10,7 +10,7 @@ const Credibility = () => {
     {
       icon: MapPin,
       title: "Presença Global",
-      description: "Projetos em todo o território brasileiro, com suporte técnico dedicado.",
+      description: "Atuação em 10 países",
     },
     {
       icon: Award,
