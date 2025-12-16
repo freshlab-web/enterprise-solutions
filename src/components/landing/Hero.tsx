@@ -2,16 +2,24 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Zap, Settings, Headphones } from "lucide-react";
 const Hero = () => {
   const scrollToContact = () => {
-    const element = document.getElementById("contact");
-    element?.scrollIntoView({
-      behavior: "smooth"
-    });
+    const element = document.getElementById("rd-column-jsdbj8lz");
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth"
+      });
+    } else {
+      window.location.href = "#rd-column-jsdbj8lz";
+    }
   };
   const scrollToSolutions = () => {
     const element = document.getElementById("solutions");
-    element?.scrollIntoView({
-      behavior: "smooth"
-    });
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth"
+      });
+    } else {
+      window.location.href = "#solutions";
+    }
   };
   const features = [{
     icon: Shield,

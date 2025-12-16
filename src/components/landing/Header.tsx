@@ -2,8 +2,23 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const scrollToContact = () => {
-    const element = document.getElementById("contact");
-    element?.scrollIntoView({ behavior: "smooth" });
+    const element = document.getElementById("rd-column-jsdbj8lz");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    } else {
+      window.location.href = "#rd-column-jsdbj8lz";
+    }
+  };
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // Fallback for hash router if needed, though usually elements are on same page
+      window.location.href = `#${id}`;
+    }
   };
 
   return (
@@ -19,16 +34,16 @@ const Header = () => {
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#solutions" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <a href="#solutions" onClick={(e) => handleNavClick(e, "solutions")} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Soluções
             </a>
-            <a href="#differentials" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <a href="#differentials" onClick={(e) => handleNavClick(e, "differentials")} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Diferenciais
             </a>
-            <a href="#hardware" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <a href="#hardware" onClick={(e) => handleNavClick(e, "hardware")} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Hardware
             </a>
-            <a href="#contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <a href="#contact" onClick={(e) => handleNavClick(e, "rd-column-jsdbj8lz")} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Contato
             </a>
           </nav>

@@ -38,7 +38,14 @@ const Integration = () => {
               </div>
             </div>
 
-            <Button variant="heroOutline" size="lg">
+            <Button variant="heroOutline" size="lg" onClick={() => {
+              const element = document.getElementById("rd-column-jsdbj8lz");
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              } else {
+                window.location.href = "#rd-column-jsdbj8lz";
+              }
+            }}>
               Conheça as soluções automatizadas
               <ArrowRight className="w-5 h-5" />
             </Button>
