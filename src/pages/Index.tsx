@@ -33,9 +33,9 @@ const Index = () => {
           <HardwareSolutions />
           <Integration />
           <Benefits />
-          <ContactForm />
+          {/* <ContactForm /> */}
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );

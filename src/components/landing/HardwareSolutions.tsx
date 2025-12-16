@@ -1,6 +1,6 @@
-import droneEnterprise from "@/assets/drone-enterprise.jpg";
-import djiDock from "@/assets/dji-dock.jpg";
-import thermalSensor from "@/assets/thermal-sensor.jpg";
+const droneEnterprise = "https://cdn.jsdelivr.net/gh/freshlab-web/enterprise-solutions@main/dist/assets/drone-enterprise-COzO7PNf.jpg";
+const djiDock = "https://cdn.jsdelivr.net/gh/freshlab-web/enterprise-solutions@main/dist/assets/dji-dock-DGIDKfnV.jpg";
+const thermalSensor = "https://cdn.jsdelivr.net/gh/freshlab-web/enterprise-solutions@main/dist/assets/thermal-sensor-BmaKYTIb.jpg";
 
 const HardwareSolutions = () => {
   const solutions = [

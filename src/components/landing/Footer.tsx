@@ -1,5 +1,3 @@
-import horusLogo from "@/assets/horus-logo.png";
-
 const Footer = () => {
   return (
     <footer className="bg-foreground py-12">
@@ -7,7 +5,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
             <img
-              src={horusLogo}
+              src="https://cdn.jsdelivr.net/gh/freshlab-web/enterprise-solutions@main/dist/assets/horus-logo-e8lk5uFZ.png"
               alt="Horus Smart Detections"
               className="h-8 w-auto brightness-0 invert"
             />

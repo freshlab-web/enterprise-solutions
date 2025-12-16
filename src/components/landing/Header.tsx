@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import horusLogo from "@/assets/horus-logo.png";
 
 const Header = () => {
   const scrollToContact = () => {
@@ -13,7 +12,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="/" className="flex items-center">
             <img 
-              src={horusLogo} 
+              src="https://cdn.jsdelivr.net/gh/freshlab-web/enterprise-solutions@main/dist/assets/horus-logo-e8lk5uFZ.png" 
               alt="Horus Smart Detections" 
               className="h-8 md:h-10 w-auto"
             />

@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Zap, Settings, Headphones } from "lucide-react";
-import heroDrone from "@/assets/hero-drone.jpg";
 const Hero = () => {
   const scrollToContact = () => {
     const element = document.getElementById("contact");
@@ -68,7 +67,7 @@ const Hero = () => {
           {/* Right Column - Image */}
           <div className="relative animate-fade-in-up-delay-2">
             <div className="relative rounded-lg overflow-hidden shadow-2xl">
-              <img alt="Drone DJI Enterprise em operação industrial sobre usina solar" className="w-full h-auto object-cover aspect-[4/3]" src="/lovable-uploads/01ff3478-a295-4544-8e5e-853526af05c7.png" />
+              <img alt="Drone DJI Enterprise em operação industrial sobre usina solar" className="w-full h-auto object-cover aspect-[4/3]" src="https://cdn.jsdelivr.net/gh/freshlab-web/enterprise-solutions@main/dist/lovable-uploads/01ff3478-a295-4544-8e5e-853526af05c7.png" />
               {/* Overlay gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 via-transparent to-transparent pointer-events-none" />
             </div>
