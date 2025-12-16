@@ -1,27 +1,33 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Zap, Settings, Headphones } from "lucide-react";
 import heroDrone from "@/assets/hero-drone.jpg";
-
 const Hero = () => {
   const scrollToContact = () => {
     const element = document.getElementById("contact");
-    element?.scrollIntoView({ behavior: "smooth" });
+    element?.scrollIntoView({
+      behavior: "smooth"
+    });
   };
-
   const scrollToSolutions = () => {
     const element = document.getElementById("solutions");
-    element?.scrollIntoView({ behavior: "smooth" });
+    element?.scrollIntoView({
+      behavior: "smooth"
+    });
   };
-
-  const features = [
-    { icon: Shield, text: "Drones DJI Enterprise" },
-    { icon: Zap, text: "DJI Dock" },
-    { icon: Settings, text: "Projetos sob medida" },
-    { icon: Headphones, text: "Suporte técnico especializado" },
-  ];
-
-  return (
-    <section className="relative pt-24 md:pt-32 pb-16 md:pb-24 overflow-hidden">
+  const features = [{
+    icon: Shield,
+    text: "Drones DJI Enterprise"
+  }, {
+    icon: Zap,
+    text: "DJI Dock"
+  }, {
+    icon: Settings,
+    text: "Projetos sob medida"
+  }, {
+    icon: Headphones,
+    text: "Suporte técnico especializado"
+  }];
+  return <section className="relative pt-24 md:pt-32 pb-16 md:pb-24 overflow-hidden">
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent pointer-events-none" />
       
@@ -41,15 +47,10 @@ const Hero = () => {
 
             {/* Feature Pills */}
             <div className="flex flex-wrap gap-3">
-              {features.map((feature, index) => (
-                <div
-                  key={index}
-                  className="flex items-center gap-2 px-4 py-2 bg-surface rounded-md border border-border"
-                >
+              {features.map((feature, index) => <div key={index} className="flex items-center gap-2 px-4 py-2 bg-surface rounded-md border border-border">
                   <feature.icon className="w-4 h-4 text-primary" />
                   <span className="text-sm font-medium text-foreground">{feature.text}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             {/* CTAs */}
@@ -67,11 +68,7 @@ const Hero = () => {
           {/* Right Column - Image */}
           <div className="relative animate-fade-in-up-delay-2">
             <div className="relative rounded-lg overflow-hidden shadow-2xl">
-              <img
-                src={heroDrone}
-                alt="Drone DJI Enterprise em operação industrial sobre usina solar"
-                className="w-full h-auto object-cover aspect-[4/3]"
-              />
+              <img alt="Drone DJI Enterprise em operação industrial sobre usina solar" className="w-full h-auto object-cover aspect-[4/3]" src="/lovable-uploads/01ff3478-a295-4544-8e5e-853526af05c7.png" />
               {/* Overlay gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 via-transparent to-transparent pointer-events-none" />
             </div>
@@ -85,8 +82,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
