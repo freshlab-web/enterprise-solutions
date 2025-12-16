@@ -9,7 +9,7 @@ const Credibility = () => {
     },
     {
       icon: MapPin,
-      title: "Atuação nacional",
+      title: "Presença Global",
       description: "Projetos em todo o território brasileiro, com suporte técnico dedicado.",
     },
     {
